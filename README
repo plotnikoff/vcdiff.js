@@ -1,0 +1,27 @@
+About
+Implementation of VCDiff (RFC 3284) in Javascript. Can be run on client or 
+server. Current implementation was ported to javascript from 
+http://code.google.com/p/diffable/ project.
+According to RFC 3284: "The VCDIFF Generic Differencing and Compression 
+Data Format." Javascript implementation uses regular Array for deltas.
+
+Usage.
+Say we have two strings:
+	"abcdef"
+	"defghiabc"
+and we want to calculate diff between them. Code will be as follows:
+
+    var vcd = new diffable.Vcdiff(), delta;
+    vcd.blockSize = 3; //setting blockSize to 3 (defaults to 20)
+    delta = vcd.encode('abcdef', 'defghiabc');
+    console.log(delta); // [3, 3, 'ghi', 0, 3]
+
+//if we want to decode data from original string and delta:
+
+    console.log(vcd.decode('abcdef', delta)); //'defghiabc'
+
+
+
+
+
+
