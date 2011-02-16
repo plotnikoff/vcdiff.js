@@ -1,0 +1,21 @@
+{
+  "name": "vcdiff",
+  "description": "Pure JS vcdiff.",
+  "main": "./vcdiff",
+  "version": "0.0.1",
+  "author": "Plotnikoff (http://github.com/plotnikoff)",
+  "engines": { "node": ">= 0.2.0" },
+  "repository": {
+        "type": "git",
+        "url": "http://github.com/plotnikoff/vcdiff.js"
+   },
+   "licenses": [
+     {
+        "type": "APL"
+     }
+   ],
+   "bugs": {
+     "web" : "http://github.com/plotnikoff/vcdiff.js/issues"
+   },
+   keywords: ['vcdiff','diff','compression','rfc3229','rfc3284']
+}
