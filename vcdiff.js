@@ -66,7 +66,7 @@
          */
         nextHash : function (toAdd) {
             var hash = this.lastHash, lsArray = this.lastString.split('');
-            hash -= (lsArray[0].charCodeAt(0) * this.lastPower);
+            hash -= (lsArray[0].charCodeAt(0) * this.moduloExp(this.primeBase, this.lastPower, this.primeMod);
             hash = hash * this.primeBase + toAdd.charCodeAt(0);
             hash %= this.primeMod;
             if (hash < 0) {
