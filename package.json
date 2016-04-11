@@ -17,5 +17,5 @@
    "bugs": {
      "web" : "http://github.com/plotnikoff/vcdiff.js/issues"
    },
-   keywords: ['vcdiff','diff','compression','rfc3229','rfc3284']
+   "keywords": ["vcdiff","diff","compression","rfc3229","rfc3284"]
 }
